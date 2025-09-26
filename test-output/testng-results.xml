@@ -2,16 +2,16 @@
 <testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-26T11:06:32 IST" name="Default suite" finished-at="2025-09-26T11:06:35 IST" duration-ms="3095">
+  <suite started-at="2025-09-26T17:52:47 IST" name="Default suite" finished-at="2025-09-26T17:52:50 IST" duration-ms="2826">
     <groups>
     </groups>
-    <test started-at="2025-09-26T11:06:32 IST" name="Default test" finished-at="2025-09-26T11:06:35 IST" duration-ms="3095">
+    <test started-at="2025-09-26T17:52:47 IST" name="Default test" finished-at="2025-09-26T17:52:50 IST" duration-ms="2826">
       <class name="Selenium_Introduction.SyncWaits.LearningWaits">
-        <test-method is-config="true" signature="driverSetup()[pri:0, instance:Selenium_Introduction.SyncWaits.LearningWaits@15de0b3c]" started-at="2025-09-26T11:06:32 IST" name="driverSetup" finished-at="2025-09-26T11:06:34 IST" duration-ms="2635" status="PASS">
+        <test-method is-config="true" signature="driverSetup()[pri:0, instance:Selenium_Introduction.SyncWaits.LearningWaits@63f8276e]" started-at="2025-09-26T17:52:47 IST" name="driverSetup" finished-at="2025-09-26T17:52:50 IST" duration-ms="2312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverSetup -->
-        <test-method signature="buttonDisabled()[pri:0, instance:Selenium_Introduction.SyncWaits.LearningWaits@15de0b3c]" started-at="2025-09-26T11:06:34 IST" name="buttonDisabled" finished-at="2025-09-26T11:06:35 IST" duration-ms="242" status="FAIL">
+        <test-method signature="buttonDisabled()[pri:0, instance:Selenium_Introduction.SyncWaits.LearningWaits@63f8276e]" started-at="2025-09-26T17:52:50 IST" name="buttonDisabled" finished-at="2025-09-26T17:52:50 IST" duration-ms="278" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -24,7 +24,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1079)
 at org.testng.Assert.assertEquals(Assert.java:1119)
-at Selenium_Introduction.SyncWaits.LearningWaits.buttonDisabled(LearningWaits.java:64)
+at Selenium_Introduction.SyncWaits.LearningWaits.buttonDisabled(LearningWaits.java:76)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -57,7 +57,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buttonDisabled -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium_Introduction.SyncWaits.LearningWaits@15de0b3c]" started-at="2025-09-26T11:06:35 IST" name="tearDown" finished-at="2025-09-26T11:06:35 IST" duration-ms="148" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium_Introduction.SyncWaits.LearningWaits@63f8276e]" started-at="2025-09-26T17:52:50 IST" name="tearDown" finished-at="2025-09-26T17:52:50 IST" duration-ms="180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

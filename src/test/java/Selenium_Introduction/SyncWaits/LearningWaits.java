@@ -25,41 +25,56 @@ public class LearningWaits extends BaseSetup
         List<String> itemsNeededList = Arrays.asList(itemsNeeded);
 
         int itemsAdded = 0;
+        
+        log.info("🚀 Starting test: addToCartItem");
+        log.info("🛒 Items to add: {}", itemsNeededList);
 
         for (int i = 0; i < products.size(); i++) {
             String productName = products.get(i).getText().split("-")[0].trim();
 
             if (itemsNeededList.contains(productName)) {
+                log.info("✅ Found item: {}, adding to cart...", productName);
+
                 driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
                 itemsAdded++;
 
                 if (itemsAdded == itemsNeeded.length) {
+                	log.info("🎯 All desired items added to cart.");
                     break;
                 }
             }
         }
-
+        log.info("🛒 Opening cart...");
         driver.findElement(By.cssSelector("img[alt='Cart']")).click();
         driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode")));
-
+        log.info("💸 Entering promo code...");
         driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
         driver.findElement(By.cssSelector("button.promoBtn")).click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
+        String promoMessage = driver.findElement(By.cssSelector("span.promoInfo")).getText();
+        log.info("🎁 Promo info displayed: {}", promoMessage);
+
+        log.info("✅ Test addToCartItem completed.");
 
         System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
     }
 @Test
 	public void buttonDisabled() {
+	log.info("🚀 Starting test: buttonDisabled");
+
 		
 		driver.findElement(By.cssSelector("img[alt='Cart']")).click();
 		Boolean buttonStatus =driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).isDisplayed();
 		Boolean buttonClick =driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).isEnabled();
 
+	    log.info("🔍 Checkout button - Displayed: {}, Enabled: {}", buttonStatus, buttonClick);
+
 		Assert.assertEquals(true, buttonStatus);
 		Assert.assertEquals(false, buttonClick);
+		 log.info("✅ Test buttonDisabled completed.");
 		System.out.println("Displayed: " + buttonStatus);
 		System.out.println("Enabled: " +buttonClick );
 	}
