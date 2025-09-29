@@ -61,7 +61,6 @@ public class SearchItems extends BaseSetup {
 	            }
 	        }
 
-	        log.info("🎯 Finished adding all products to cart.");
 	    }
 
 }
