@@ -62,5 +62,23 @@ public class SearchItems extends BaseSetup {
 	        }
 
 	    }
+	
+//	public void productPrice() {
+//		// Click on the cart button
+//		
+//		// Click on the Proceed to checkout button
+//		
+//		// Apply promo code.
+//		
+//		// Verify No. of Ietms.
+//		
+//		
+//		// Verify price.
+//		
+//		
+//		// Verify total price
+//		
+//		
+//	}
 
 }
