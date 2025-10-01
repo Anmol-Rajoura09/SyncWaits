@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Appenders>
+        <!-- Console Appender: prints logs in terminal + Jenkins console -->
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
+            <PatternLayout pattern="[%d{HH:mm:ss}] [%level] %c{1} - %msg%n" />
         </Console>
-        <File name="File" fileName="logs/testlog.log" append="false">
-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
+
+        <!-- File Appender: optional if you also want logs in a file -->
+        <File name="FileLogger" fileName="logs/test-log.log" append="true">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%level] %c{1} - %msg%n" />
         </File>
     </Appenders>
+
     <Loggers>
+        <!-- Root logger -->
         <Root level="info">
-            <AppenderRef ref="Console"/>
-            <AppenderRef ref="File"/>
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="FileLogger" />
         </Root>
     </Loggers>
 </Configuration>

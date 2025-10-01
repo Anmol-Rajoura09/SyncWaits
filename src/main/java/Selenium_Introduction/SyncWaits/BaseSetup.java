@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeClass;
 public class BaseSetup {
 	
 	protected WebDriver driver;
-	protected Logger log = LogManager.getLogger(getClass());
+    protected static final Logger log = LogManager.getLogger(BaseSetup.class);
 	
 	@BeforeClass
 	public void driverSetup() {
