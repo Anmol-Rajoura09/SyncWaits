@@ -61,46 +61,62 @@ public class SearchItems extends BaseSetup {
 
     @Test(priority = 2)
     public void productPrice() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        log.info("🚀 Starting test: productPrice");
 
-        // Click on the cart button
-        driver.findElement(By.cssSelector("img[alt='Cart']")).click();
+        try {
+            // Click on the cart button
+            driver.findElement(By.cssSelector("img[alt='Cart']")).click();
+            log.info("🛒 Cart opened");
 
-        // Click on the Proceed to checkout button
-        driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
+            // Click on the Proceed to checkout button
+            driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
+            log.info("➡️ Proceed to checkout clicked");
 
-        // Apply promo code
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode")));
-        log.info("💸 Entering promo code...");
-        driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
-        driver.findElement(By.cssSelector("button.promoBtn")).click();
+            // Apply promo code
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promoCode")));
+            log.info("💸 Entering promo code...");
+            driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
+            driver.findElement(By.cssSelector("button.promoBtn")).click();
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
-        String promoMessage = driver.findElement(By.cssSelector("span.promoInfo")).getText();
-        log.info("🎁 Promo info displayed: {}", promoMessage);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
+            String promoMessage = driver.findElement(By.cssSelector("span.promoInfo")).getText();
+            log.info("🎁 Promo info displayed: {}", promoMessage);
 
-        // ✅ FIX: Only pick product row prices (5th column) to avoid promos/discounts
-        List<WebElement> priceRows = driver.findElements(By.cssSelector("tr td:nth-child(5) p.amount"));
-        int totalAmount = 0;
+            // ✅ FIX: Only pick product row prices (5th column) to avoid promos/discounts
+            List<WebElement> priceRows = driver.findElements(By.cssSelector("tr td:nth-child(5) p.amount"));
+            int totalAmount = 0;
 
-        for (WebElement amount : priceRows) {
-            String text = amount.getText().trim();
-            if (!text.isEmpty()) {
-                int value = Integer.parseInt(text);
-                totalAmount += value;
+            for (WebElement amount : priceRows) {
+                String text = amount.getText().trim();
+                if (!text.isEmpty()) {
+                    int value = Integer.parseInt(text);
+                    totalAmount += value;
+                }
             }
+
+            log.info("💰 Total calculated from items: {}", totalAmount);
+            log.info("📊 Price rows found: {}", priceRows.size());
+
+            // Verify total price displayed matches sum
+            String ttlAmountText = driver.findElement(By.className("totAmt")).getText().trim();
+            int displayedTotal = Integer.parseInt(ttlAmountText);
+            log.info("🛒 Displayed total: {}", displayedTotal);
+
+            // Assertion with error logging
+            if (displayedTotal == totalAmount) {
+                log.info("✅ Assertion Passed: Total amount matches displayed total.");
+            } else {
+                log.error("❌ Assertion Failed: Calculated = {}, Displayed = {}", totalAmount, displayedTotal);
+            }
+
+            Assert.assertEquals(displayedTotal, totalAmount, "❌ Mismatch in total calculation!");
+
+        } catch (Exception e) {
+            log.error("❌ Exception occurred in productPrice test: ", e);
+            throw e; // rethrow so TestNG still marks test as failed
         }
 
-        log.info("💰 Total calculated from items: {}", totalAmount);
-        log.info("📊 Price rows found: {}", priceRows.size());
-
-        // Verify total price displayed matches sum
-        String ttlAmountText = driver.findElement(By.className("totAmt")).getText().trim();
-        int displayedTotal = Integer.parseInt(ttlAmountText);
-
-        log.info("🛒 Displayed total: {}", displayedTotal);
-
-        Assert.assertEquals(displayedTotal, totalAmount, "❌ Mismatch in total calculation!");
-        log.info("✅ Assertion Passed: Total amount matches displayed total.");
+        log.info("✅ Completed test: productPrice");
     }
 }
