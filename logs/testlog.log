@@ -1,117 +1,85 @@
-2025-10-01 12:56:23 INFO  LearningWaits:66 - 🚀 Starting test: buttonDisabled
-2025-10-01 12:56:23 INFO  LearningWaits:73 - 🔍 Checkout button - Displayed: true, Enabled: true
-2025-10-01 12:56:26 INFO  SearchItems:23 - 🚀 Starting test: Search and Add Products to Cart
-2025-10-01 12:56:26 INFO  SearchItems:35 - 🛒 Total products found: 32
-2025-10-01 12:56:26 INFO  SearchItems:44 - 🔎 Searching for product: Brocolli - 1 Kg
-2025-10-01 12:56:27 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Brocolli - 1 Kg
-2025-10-01 12:56:27 INFO  SearchItems:44 - 🔎 Searching for product: Cauliflower - 1 Kg
-2025-10-01 12:56:27 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Cauliflower - 1 Kg
-2025-10-01 12:56:27 INFO  SearchItems:44 - 🔎 Searching for product: Cucumber - 1 Kg
-2025-10-01 12:56:27 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Cucumber - 1 Kg
-2025-10-01 12:56:28 INFO  SearchItems:44 - 🔎 Searching for product: Beetroot - 1 Kg
-2025-10-01 12:56:28 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Beetroot - 1 Kg
-2025-10-01 12:56:28 INFO  SearchItems:44 - 🔎 Searching for product: Carrot - 1 Kg
-2025-10-01 12:56:28 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Carrot - 1 Kg
-2025-10-01 12:56:28 INFO  SearchItems:44 - 🔎 Searching for product: Tomato - 1 Kg
-2025-10-01 12:56:28 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Tomato - 1 Kg
-2025-10-01 12:56:29 INFO  SearchItems:44 - 🔎 Searching for product: Beans - 1 Kg
-2025-10-01 12:56:29 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Beans - 1 Kg
-2025-10-01 12:56:29 INFO  SearchItems:44 - 🔎 Searching for product: Brinjal - 1 Kg
-2025-10-01 12:56:29 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Brinjal - 1 Kg
-2025-10-01 12:56:29 INFO  SearchItems:44 - 🔎 Searching for product: Capsicum
-2025-10-01 12:56:29 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Capsicum
-2025-10-01 12:56:29 INFO  SearchItems:44 - 🔎 Searching for product: Mushroom - 1 Kg
-2025-10-01 12:56:30 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Mushroom - 1 Kg
-2025-10-01 12:56:30 INFO  SearchItems:44 - 🔎 Searching for product: Potato - 1 Kg
-2025-10-01 12:56:30 ERROR SearchItems:60 - ❌ Failed to add product: Potato - 1 Kg
-org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
-  (Session info: chrome=140.0.7339.186)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.35.0', revision: '1c58e5028b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9e0a91852dce90ed01e1170509df6f77, clickElement {id=f.B9946F5E41E9D3AD499A0EDDDED81502.d.0D8D06BE98A252D5428230EC25BD7658.e.248}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.186, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\Anmol\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62274}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62274/devtoo..., se:cdpVersion: 140.0.7339.186, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9e0a91852dce90ed01e1170509df6f77)] -> xpath: //button[text()='ADD TO CART']]
-Session ID: 9e0a91852dce90ed01e1170509df6f77
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at Selenium_Introduction.SyncWaits.SearchItems.searchItemsAndAddToCart(SearchItems.java:56)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-2025-10-01 12:56:30 INFO  SearchItems:44 - 🔎 Searching for product: Pumpkin - 1 Kg
-2025-10-01 12:56:30 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Pumpkin - 1 Kg
-2025-10-01 12:56:30 INFO  SearchItems:44 - 🔎 Searching for product: Corn - 1 Kg
-2025-10-01 12:56:31 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Corn - 1 Kg
-2025-10-01 12:56:31 INFO  SearchItems:44 - 🔎 Searching for product: Onion - 1 Kg
-2025-10-01 12:56:31 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Onion - 1 Kg
-2025-10-01 12:56:31 INFO  SearchItems:44 - 🔎 Searching for product: Apple - 1 Kg
-2025-10-01 12:56:31 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Apple - 1 Kg
-2025-10-01 12:56:31 INFO  SearchItems:44 - 🔎 Searching for product: Banana - 1 Kg
-2025-10-01 12:56:32 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Banana - 1 Kg
-2025-10-01 12:56:32 INFO  SearchItems:44 - 🔎 Searching for product: Grapes - 1 Kg
-2025-10-01 12:56:32 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Grapes - 1 Kg
-2025-10-01 12:56:32 INFO  SearchItems:44 - 🔎 Searching for product: Mango - 1 Kg
-2025-10-01 12:56:32 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Mango - 1 Kg
-2025-10-01 12:56:33 INFO  SearchItems:44 - 🔎 Searching for product: Musk Melon - 1 Kg
-2025-10-01 12:56:33 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Musk Melon - 1 Kg
-2025-10-01 12:56:33 INFO  SearchItems:44 - 🔎 Searching for product: Orange - 1 Kg
-2025-10-01 12:56:33 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Orange - 1 Kg
-2025-10-01 12:56:33 INFO  SearchItems:44 - 🔎 Searching for product: Pears - 1 Kg
-2025-10-01 12:56:34 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Pears - 1 Kg
-2025-10-01 12:56:34 INFO  SearchItems:44 - 🔎 Searching for product: Pomegranate - 1 Kg
-2025-10-01 12:56:34 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Pomegranate - 1 Kg
-2025-10-01 12:56:34 INFO  SearchItems:44 - 🔎 Searching for product: Raspberry - 1/4 Kg
-2025-10-01 12:56:34 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Raspberry - 1/4 Kg
-2025-10-01 12:56:34 INFO  SearchItems:44 - 🔎 Searching for product: Strawberry - 1/4 Kg
-2025-10-01 12:56:35 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Strawberry - 1/4 Kg
-2025-10-01 12:56:35 INFO  SearchItems:44 - 🔎 Searching for product: Water Melon - 1 Kg
-2025-10-01 12:56:35 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Water Melon - 1 Kg
-2025-10-01 12:56:35 INFO  SearchItems:44 - 🔎 Searching for product: Almonds - 1/4 Kg
-2025-10-01 12:56:35 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Almonds - 1/4 Kg
-2025-10-01 12:56:35 INFO  SearchItems:44 - 🔎 Searching for product: Pista - 1/4 Kg
-2025-10-01 12:56:36 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Pista - 1/4 Kg
-2025-10-01 12:56:36 INFO  SearchItems:44 - 🔎 Searching for product: Nuts Mixture - 1 Kg
-2025-10-01 12:56:36 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Nuts Mixture - 1 Kg
-2025-10-01 12:56:36 INFO  SearchItems:44 - 🔎 Searching for product: Cashews - 1 Kg
-2025-10-01 12:56:37 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Cashews - 1 Kg
-2025-10-01 12:56:37 INFO  SearchItems:44 - 🔎 Searching for product: Walnuts - 1/4 Kg
-2025-10-01 12:56:37 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: Walnuts - 1/4 Kg
-2025-10-01 12:56:37 INFO  SearchItems:44 - 🔎 Searching for product: 
-2025-10-01 12:56:37 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: 
-2025-10-01 12:56:37 INFO  SearchItems:44 - 🔎 Searching for product: 
-2025-10-01 12:56:37 INFO  SearchItems:57 - ✅ Clicked 'ADD TO CART' for: 
+2025-10-01 16:50:03 INFO  LearningWaits:66 - 🚀 Starting test: buttonDisabled
+2025-10-01 16:50:03 INFO  LearningWaits:77 - 🔍 Checkout button - Displayed: true, Enabled: true
+2025-10-01 16:50:03 ERROR LearningWaits:84 - ❌ Assertion Failed in buttonDisabled test: ❌ Checkout button should be disabled expected [false] but found [true]
+2025-10-01 16:50:04 INFO  LearningWaits:29 - 🚀 Starting test: addToCartItem
+2025-10-01 16:50:04 INFO  LearningWaits:30 - 🛒 Items to add: [Cucumber, Brocolli, Beetroot]
+2025-10-01 16:50:04 INFO  LearningWaits:36 - ✅ Found item: Brocolli, adding to cart...
+2025-10-01 16:50:04 INFO  LearningWaits:36 - ✅ Found item: Cucumber, adding to cart...
+2025-10-01 16:50:04 INFO  LearningWaits:36 - ✅ Found item: Beetroot, adding to cart...
+2025-10-01 16:50:04 INFO  LearningWaits:42 - 🎯 All desired items added to cart.
+2025-10-01 16:50:04 INFO  LearningWaits:47 - 🛒 Opening cart...
+2025-10-01 16:50:05 INFO  LearningWaits:52 - 💸 Entering promo code...
+2025-10-01 16:50:11 INFO  LearningWaits:58 - 🎁 Promo info displayed: Code applied ..!
+2025-10-01 16:50:11 INFO  LearningWaits:60 - ✅ Test addToCartItem completed.
+2025-10-01 16:50:14 INFO  SearchItems:20 - 🚀 Starting test: Search and Add Products to Cart
+2025-10-01 16:50:14 INFO  SearchItems:31 - 🛒 Total products found: 32
+2025-10-01 16:50:14 INFO  SearchItems:38 - 🔎 Searching for product: Brocolli
+2025-10-01 16:50:15 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Brocolli
+2025-10-01 16:50:15 INFO  SearchItems:38 - 🔎 Searching for product: Cauliflower
+2025-10-01 16:50:15 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Cauliflower
+2025-10-01 16:50:15 INFO  SearchItems:38 - 🔎 Searching for product: Cucumber
+2025-10-01 16:50:16 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Cucumber
+2025-10-01 16:50:16 INFO  SearchItems:38 - 🔎 Searching for product: Beetroot
+2025-10-01 16:50:16 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Beetroot
+2025-10-01 16:50:16 INFO  SearchItems:38 - 🔎 Searching for product: Carrot
+2025-10-01 16:50:16 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Carrot
+2025-10-01 16:50:16 INFO  SearchItems:38 - 🔎 Searching for product: Tomato
+2025-10-01 16:50:17 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Tomato
+2025-10-01 16:50:17 INFO  SearchItems:38 - 🔎 Searching for product: Beans
+2025-10-01 16:50:17 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Beans
+2025-10-01 16:50:17 INFO  SearchItems:38 - 🔎 Searching for product: Brinjal
+2025-10-01 16:50:18 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Brinjal
+2025-10-01 16:50:18 INFO  SearchItems:38 - 🔎 Searching for product: Capsicum
+2025-10-01 16:50:18 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Capsicum
+2025-10-01 16:50:18 INFO  SearchItems:38 - 🔎 Searching for product: Mushroom
+2025-10-01 16:50:18 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Mushroom
+2025-10-01 16:50:18 INFO  SearchItems:38 - 🔎 Searching for product: Potato
+2025-10-01 16:50:19 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Potato
+2025-10-01 16:50:19 INFO  SearchItems:38 - 🔎 Searching for product: Pumpkin
+2025-10-01 16:50:19 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Pumpkin
+2025-10-01 16:50:19 INFO  SearchItems:38 - 🔎 Searching for product: Corn
+2025-10-01 16:50:20 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Corn
+2025-10-01 16:50:20 INFO  SearchItems:38 - 🔎 Searching for product: Onion
+2025-10-01 16:50:20 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Onion
+2025-10-01 16:50:20 INFO  SearchItems:38 - 🔎 Searching for product: Apple
+2025-10-01 16:50:21 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Apple
+2025-10-01 16:50:21 INFO  SearchItems:38 - 🔎 Searching for product: Banana
+2025-10-01 16:50:21 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Banana
+2025-10-01 16:50:21 INFO  SearchItems:38 - 🔎 Searching for product: Grapes
+2025-10-01 16:50:21 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Grapes
+2025-10-01 16:50:22 INFO  SearchItems:38 - 🔎 Searching for product: Mango
+2025-10-01 16:50:22 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Mango
+2025-10-01 16:50:22 INFO  SearchItems:38 - 🔎 Searching for product: Musk Melon
+2025-10-01 16:50:22 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Musk Melon
+2025-10-01 16:50:22 INFO  SearchItems:38 - 🔎 Searching for product: Orange
+2025-10-01 16:50:23 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Orange
+2025-10-01 16:50:23 INFO  SearchItems:38 - 🔎 Searching for product: Pears
+2025-10-01 16:50:23 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Pears
+2025-10-01 16:50:23 INFO  SearchItems:38 - 🔎 Searching for product: Pomegranate
+2025-10-01 16:50:24 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Pomegranate
+2025-10-01 16:50:24 INFO  SearchItems:38 - 🔎 Searching for product: Raspberry
+2025-10-01 16:50:24 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Raspberry
+2025-10-01 16:50:24 INFO  SearchItems:38 - 🔎 Searching for product: Strawberry
+2025-10-01 16:50:25 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Strawberry
+2025-10-01 16:50:25 INFO  SearchItems:38 - 🔎 Searching for product: Water Melon
+2025-10-01 16:50:25 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Water Melon
+2025-10-01 16:50:25 INFO  SearchItems:38 - 🔎 Searching for product: Almonds
+2025-10-01 16:50:26 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Almonds
+2025-10-01 16:50:26 INFO  SearchItems:38 - 🔎 Searching for product: Pista
+2025-10-01 16:50:26 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Pista
+2025-10-01 16:50:26 INFO  SearchItems:38 - 🔎 Searching for product: Nuts Mixture
+2025-10-01 16:50:27 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Nuts Mixture
+2025-10-01 16:50:27 INFO  SearchItems:38 - 🔎 Searching for product: Cashews
+2025-10-01 16:50:27 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Cashews
+2025-10-01 16:50:27 INFO  SearchItems:38 - 🔎 Searching for product: Walnuts
+2025-10-01 16:50:28 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: Walnuts
+2025-10-01 16:50:28 INFO  SearchItems:38 - 🔎 Searching for product: 
+2025-10-01 16:50:28 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: 
+2025-10-01 16:50:28 INFO  SearchItems:38 - 🔎 Searching for product: 
+2025-10-01 16:50:29 INFO  SearchItems:51 - ✅ Clicked 'ADD TO CART' for: 
+2025-10-01 16:50:30 INFO  SearchItems:74 - 💸 Entering promo code...
+2025-10-01 16:50:36 INFO  SearchItems:80 - 🎁 Promo info displayed: Code applied ..!
+2025-10-01 16:50:36 INFO  SearchItems:94 - 💰 Total calculated from items: 2440
+2025-10-01 16:50:36 INFO  SearchItems:95 - 📊 Price rows found: 10
+2025-10-01 16:50:36 INFO  SearchItems:101 - 🛒 Displayed total: 2440
+2025-10-01 16:50:36 INFO  SearchItems:104 - ✅ Assertion Passed: Total amount matches displayed total.

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>RegressionTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Oct 01 12:56:20 IST 2025</td>
+<td>Started on:</td><td>Wed Oct 01 16:49:59 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16982 ms)</td>
+<tr><td>Total time:</td><td>37 seconds (37205 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,18 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Selenium_Introduction.SyncWaits.LearningWaits.buttonDisabled()'><b>buttonDisabled</b><br>Test class: Selenium_Introduction.SyncWaits.LearningWaits</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at Selenium_Introduction.SyncWaits.LearningWaits.buttonDisabled(LearningWaits.java:76)
+<td><div><pre>java.lang.AssertionError: ❌ Checkout button should be disabled expected [false] but found [true]
+	at Selenium_Introduction.SyncWaits.LearningWaits.buttonDisabled(LearningWaits.java:81)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace34757331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace34757331'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1061913613", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1061913613'><pre>java.lang.AssertionError: ❌ Checkout button should be disabled expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1079)
-	at org.testng.Assert.assertEquals(Assert.java:1119)
-	at Selenium_Introduction.SyncWaits.LearningWaits.buttonDisabled(LearningWaits.java:76)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at Selenium_Introduction.SyncWaits.LearningWaits.buttonDisabled(LearningWaits.java:81)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -117,7 +114,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>Selenium_Introduction.SyncWaits.LearningWaits@4ebea12c</td></tr>
+<td>Selenium_Introduction.SyncWaits.LearningWaits@7fcbe147</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -130,8 +127,18 @@ function toggleAllBoxes() {
 <tr>
 <td title='Selenium_Introduction.SyncWaits.SearchItems.searchItemsAndAddToCart()'><b>searchItemsAndAddToCart</b><br>Test class: Selenium_Introduction.SyncWaits.SearchItems</td>
 <td></td>
-<td>11</td>
-<td>Selenium_Introduction.SyncWaits.SearchItems@743cb8e0</td></tr>
+<td>15</td>
+<td>Selenium_Introduction.SyncWaits.SearchItems@649725e3</td></tr>
+<tr>
+<td title='Selenium_Introduction.SyncWaits.SearchItems.productPrice()'><b>productPrice</b><br>Test class: Selenium_Introduction.SyncWaits.SearchItems</td>
+<td></td>
+<td>7</td>
+<td>Selenium_Introduction.SyncWaits.SearchItems@649725e3</td></tr>
+<tr>
+<td title='Selenium_Introduction.SyncWaits.LearningWaits.addToCartItem()'><b>addToCartItem</b><br>Test class: Selenium_Introduction.SyncWaits.LearningWaits</td>
+<td></td>
+<td>7</td>
+<td>Selenium_Introduction.SyncWaits.LearningWaits@7fcbe147</td></tr>
 </table><p>
 </body>
 </html>

@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 public class LearningWaits extends BaseSetup
 {
 	
-@Test(enabled = false)
+@Test(priority = 2)
     public void addToCartItem() {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -61,23 +61,32 @@ public class LearningWaits extends BaseSetup
 
         System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
     }
-@Test
+@Test(priority = 1)
 	public void buttonDisabled() {
 	log.info("🚀 Starting test: buttonDisabled");
 
-		
-		driver.findElement(By.cssSelector("img[alt='Cart']")).click();
-		Boolean buttonStatus =driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).isDisplayed();
-		Boolean buttonClick =driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).isEnabled();
+    // Open Cart
+    driver.findElement(By.cssSelector("img[alt='Cart']")).click();
 
-	    log.info("🔍 Checkout button - Displayed: {}, Enabled: {}", buttonStatus, buttonClick);
+    // Locate checkout button
+    WebElement checkoutBtn = driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]"));
 
-		Assert.assertEquals(true, buttonStatus);
-		Assert.assertEquals(false, buttonClick);
-		 log.info("✅ Test buttonDisabled completed.");
-		System.out.println("Displayed: " + buttonStatus);
-		System.out.println("Enabled: " +buttonClick );
-	}
+    Boolean buttonStatus = checkoutBtn.isDisplayed();
+    Boolean buttonClick = checkoutBtn.isEnabled();
+
+    log.info("🔍 Checkout button - Displayed: {}, Enabled: {}", buttonStatus, buttonClick);
+
+    try {
+        Assert.assertTrue(buttonStatus, "❌ Checkout button should be displayed");
+        Assert.assertFalse(buttonClick, "❌ Checkout button should be disabled");
+        log.info("✅ Assertion Passed: Checkout button is displayed but disabled as expected.");
+    } catch (AssertionError e) {
+        log.error("❌ Assertion Failed in buttonDisabled test: {}", e.getMessage());
+        throw e; // rethrow so test fails in report
+    }
+
+    log.info("✅ Test buttonDisabled completed.");
+}
 
 
 }
