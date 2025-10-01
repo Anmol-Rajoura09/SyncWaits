@@ -87,3 +87,268 @@
 [2025-10-01 17:26:29] [INFO] BaseSetup - 📊 Price rows found: 11
 [2025-10-01 17:26:29] [INFO] BaseSetup - 🛒 Displayed total: 2550
 [2025-10-01 17:26:29] [INFO] BaseSetup - ✅ Assertion Passed: Total amount matches displayed total.
+[2025-10-01 17:46:52] [WARN] TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Anmol\eclipse-workspace\SyncWaits\testng.xml] otherwise TestNG may fail or not work as expected.
+[2025-10-01 17:46:53] [INFO] Utils - [TestNG] Running:
+  C:\Users\Anmol\eclipse-workspace\SyncWaits\testng.xml
+
+[2025-10-01 17:46:59] [INFO] BaseSetup - 🚀 Starting test: buttonDisabled
+[2025-10-01 17:46:59] [INFO] BaseSetup - 🔍 Checkout button - Displayed: true, Enabled: true
+[2025-10-01 17:46:59] [ERROR] BaseSetup - ❌ Assertion Failed in buttonDisabled test: ❌ Checkout button should be disabled expected [false] but found [true]
+[2025-10-01 17:47:00] [INFO] BaseSetup - 🚀 Starting test: addToCartItem
+[2025-10-01 17:47:00] [INFO] BaseSetup - 🛒 Items to add: [Cucumber, Brocolli, Beetroot]
+[2025-10-01 17:47:00] [INFO] BaseSetup - ✅ Found item: Brocolli, adding to cart...
+[2025-10-01 17:47:00] [INFO] BaseSetup - ✅ Found item: Cucumber, adding to cart...
+[2025-10-01 17:47:00] [INFO] BaseSetup - ✅ Found item: Beetroot, adding to cart...
+[2025-10-01 17:47:00] [INFO] BaseSetup - 🎯 All desired items added to cart.
+[2025-10-01 17:47:00] [INFO] BaseSetup - 🛒 Opening cart...
+[2025-10-01 17:47:01] [INFO] BaseSetup - 💸 Entering promo code...
+[2025-10-01 17:47:14] [INFO] BaseSetup - 🚀 Starting test: Search and Add Products to Cart
+[2025-10-01 17:47:15] [INFO] BaseSetup - 🛒 Total products found: 32
+[2025-10-01 17:47:15] [INFO] BaseSetup - 🔎 Searching for product: Brocolli
+[2025-10-01 17:47:15] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Brocolli
+[2025-10-01 17:47:15] [INFO] BaseSetup - 🔎 Searching for product: Cauliflower
+[2025-10-01 17:47:16] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Cauliflower
+[2025-10-01 17:47:16] [INFO] BaseSetup - 🔎 Searching for product: Cucumber
+[2025-10-01 17:47:16] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Cucumber
+[2025-10-01 17:47:16] [INFO] BaseSetup - 🔎 Searching for product: Beetroot
+[2025-10-01 17:47:16] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Beetroot
+[2025-10-01 17:47:16] [INFO] BaseSetup - 🔎 Searching for product: Carrot
+[2025-10-01 17:47:16] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Carrot
+[2025-10-01 17:47:17] [INFO] BaseSetup - 🔎 Searching for product: Tomato
+[2025-10-01 17:47:17] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Tomato
+[2025-10-01 17:47:17] [INFO] BaseSetup - 🔎 Searching for product: Beans
+[2025-10-01 17:47:17] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Beans
+[2025-10-01 17:47:17] [INFO] BaseSetup - 🔎 Searching for product: Brinjal
+[2025-10-01 17:47:17] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Brinjal
+[2025-10-01 17:47:17] [INFO] BaseSetup - 🔎 Searching for product: Capsicum
+[2025-10-01 17:47:18] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Capsicum
+[2025-10-01 17:47:18] [INFO] BaseSetup - 🔎 Searching for product: Mushroom
+[2025-10-01 17:47:18] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Mushroom
+[2025-10-01 17:47:18] [INFO] BaseSetup - 🔎 Searching for product: Potato
+[2025-10-01 17:47:18] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Potato
+[2025-10-01 17:47:18] [INFO] BaseSetup - 🔎 Searching for product: Pumpkin
+[2025-10-01 17:47:19] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pumpkin
+[2025-10-01 17:47:19] [INFO] BaseSetup - 🔎 Searching for product: Corn
+[2025-10-01 17:47:19] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Corn
+[2025-10-01 17:47:19] [INFO] BaseSetup - 🔎 Searching for product: Onion
+[2025-10-01 17:47:19] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Onion
+[2025-10-01 17:47:19] [INFO] BaseSetup - 🔎 Searching for product: Apple
+[2025-10-01 17:47:20] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Apple
+[2025-10-01 17:47:20] [INFO] BaseSetup - 🔎 Searching for product: Banana
+[2025-10-01 17:47:20] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Banana
+[2025-10-01 17:47:20] [INFO] BaseSetup - 🔎 Searching for product: Grapes
+[2025-10-01 17:47:20] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Grapes
+[2025-10-01 17:47:20] [INFO] BaseSetup - 🔎 Searching for product: Mango
+[2025-10-01 17:47:21] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Mango
+[2025-10-01 17:47:21] [INFO] BaseSetup - 🔎 Searching for product: Musk Melon
+[2025-10-01 17:47:22] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Musk Melon
+[2025-10-01 17:47:22] [INFO] BaseSetup - 🔎 Searching for product: Orange
+[2025-10-01 17:47:22] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Orange
+[2025-10-01 17:47:22] [INFO] BaseSetup - 🔎 Searching for product: Pears
+[2025-10-01 17:47:22] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pears
+[2025-10-01 17:47:22] [INFO] BaseSetup - 🔎 Searching for product: Pomegranate
+[2025-10-01 17:47:23] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pomegranate
+[2025-10-01 17:47:23] [INFO] BaseSetup - 🔎 Searching for product: Raspberry
+[2025-10-01 17:47:23] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Raspberry
+[2025-10-01 17:47:23] [INFO] BaseSetup - 🔎 Searching for product: Strawberry
+[2025-10-01 17:47:23] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Strawberry
+[2025-10-01 17:47:23] [INFO] BaseSetup - 🔎 Searching for product: Water Melon
+[2025-10-01 17:47:24] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Water Melon
+[2025-10-01 17:47:24] [INFO] BaseSetup - 🔎 Searching for product: Almonds
+[2025-10-01 17:47:24] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Almonds
+[2025-10-01 17:47:24] [INFO] BaseSetup - 🔎 Searching for product: Pista
+[2025-10-01 17:47:24] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pista
+[2025-10-01 17:47:24] [INFO] BaseSetup - 🔎 Searching for product: Nuts Mixture
+[2025-10-01 17:47:25] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Nuts Mixture
+[2025-10-01 17:47:25] [INFO] BaseSetup - 🔎 Searching for product: Cashews
+[2025-10-01 17:47:25] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Cashews
+[2025-10-01 17:47:25] [INFO] BaseSetup - 🔎 Searching for product: Walnuts
+[2025-10-01 17:47:25] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Walnuts
+[2025-10-01 17:47:25] [INFO] BaseSetup - 🔎 Searching for product: 
+[2025-10-01 17:47:26] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: 
+[2025-10-01 17:47:26] [INFO] BaseSetup - 🔎 Searching for product: 
+[2025-10-01 17:47:26] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: 
+[2025-10-01 17:47:27] [INFO] BaseSetup - 💸 Entering promo code...
+[2025-10-01 17:47:32] [INFO] BaseSetup - 🎁 Promo info displayed: Code applied ..!
+[2025-10-01 17:47:32] [INFO] BaseSetup - 💰 Total calculated from items: 2550
+[2025-10-01 17:47:32] [INFO] BaseSetup - 📊 Price rows found: 11
+[2025-10-01 17:47:32] [INFO] BaseSetup - 🛒 Displayed total: 2550
+[2025-10-01 17:47:32] [INFO] BaseSetup - ✅ Assertion Passed: Total amount matches displayed total.
+[2025-10-01 17:56:02] [WARN] TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Anmol\eclipse-workspace\SyncWaits\testng.xml] otherwise TestNG may fail or not work as expected.
+[2025-10-01 17:56:02] [INFO] Utils - [TestNG] Running:
+  C:\Users\Anmol\eclipse-workspace\SyncWaits\testng.xml
+
+[2025-10-01 17:56:05] [INFO] BaseSetup - 🚀 Starting test: buttonDisabled
+[2025-10-01 17:56:05] [INFO] BaseSetup - 🔍 Checkout button - Displayed: true, Enabled: true
+[2025-10-01 17:56:05] [ERROR] BaseSetup - ❌ Assertion Failed in buttonDisabled test: ❌ Checkout button should be disabled expected [false] but found [true]
+[2025-10-01 17:56:05] [INFO] BaseSetup - 🚀 Starting test: addToCartItem
+[2025-10-01 17:56:05] [INFO] BaseSetup - 🛒 Items to add: [Cucumber, Brocolli, Beetroot]
+[2025-10-01 17:56:05] [INFO] BaseSetup - ✅ Found item: Brocolli, adding to cart...
+[2025-10-01 17:56:05] [INFO] BaseSetup - ✅ Found item: Cucumber, adding to cart...
+[2025-10-01 17:56:06] [INFO] BaseSetup - ✅ Found item: Beetroot, adding to cart...
+[2025-10-01 17:56:06] [INFO] BaseSetup - 🎯 All desired items added to cart.
+[2025-10-01 17:56:06] [INFO] BaseSetup - 🛒 Opening cart...
+[2025-10-01 17:56:06] [INFO] BaseSetup - 💸 Entering promo code...
+[2025-10-01 17:56:12] [INFO] BaseSetup - 🎁 Promo info displayed: Code applied ..!
+[2025-10-01 17:56:12] [INFO] BaseSetup - ✅ Test addToCartItem completed.
+[2025-10-01 17:56:14] [INFO] BaseSetup - 🚀 Starting test: Search and Add Products to Cart
+[2025-10-01 17:56:15] [INFO] BaseSetup - 🛒 Total products found: 32
+[2025-10-01 17:56:15] [INFO] BaseSetup - 🔎 Searching for product: Brocolli
+[2025-10-01 17:56:15] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Brocolli
+[2025-10-01 17:56:15] [INFO] BaseSetup - 🔎 Searching for product: Cauliflower
+[2025-10-01 17:56:16] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Cauliflower
+[2025-10-01 17:56:16] [INFO] BaseSetup - 🔎 Searching for product: Cucumber
+[2025-10-01 17:56:16] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Cucumber
+[2025-10-01 17:56:16] [INFO] BaseSetup - 🔎 Searching for product: Beetroot
+[2025-10-01 17:56:16] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Beetroot
+[2025-10-01 17:56:16] [INFO] BaseSetup - 🔎 Searching for product: Carrot
+[2025-10-01 17:56:17] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Carrot
+[2025-10-01 17:56:17] [INFO] BaseSetup - 🔎 Searching for product: Tomato
+[2025-10-01 17:56:17] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Tomato
+[2025-10-01 17:56:17] [INFO] BaseSetup - 🔎 Searching for product: Beans
+[2025-10-01 17:56:17] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Beans
+[2025-10-01 17:56:17] [INFO] BaseSetup - 🔎 Searching for product: Brinjal
+[2025-10-01 17:56:18] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Brinjal
+[2025-10-01 17:56:18] [INFO] BaseSetup - 🔎 Searching for product: Capsicum
+[2025-10-01 17:56:18] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Capsicum
+[2025-10-01 17:56:18] [INFO] BaseSetup - 🔎 Searching for product: Mushroom
+[2025-10-01 17:56:18] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Mushroom
+[2025-10-01 17:56:18] [INFO] BaseSetup - 🔎 Searching for product: Potato
+[2025-10-01 17:56:19] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Potato
+[2025-10-01 17:56:19] [INFO] BaseSetup - 🔎 Searching for product: Pumpkin
+[2025-10-01 17:56:19] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pumpkin
+[2025-10-01 17:56:19] [INFO] BaseSetup - 🔎 Searching for product: Corn
+[2025-10-01 17:56:19] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Corn
+[2025-10-01 17:56:19] [INFO] BaseSetup - 🔎 Searching for product: Onion
+[2025-10-01 17:56:19] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Onion
+[2025-10-01 17:56:20] [INFO] BaseSetup - 🔎 Searching for product: Apple
+[2025-10-01 17:56:20] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Apple
+[2025-10-01 17:56:20] [INFO] BaseSetup - 🔎 Searching for product: Banana
+[2025-10-01 17:56:20] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Banana
+[2025-10-01 17:56:20] [INFO] BaseSetup - 🔎 Searching for product: Grapes
+[2025-10-01 17:56:21] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Grapes
+[2025-10-01 17:56:21] [INFO] BaseSetup - 🔎 Searching for product: Mango
+[2025-10-01 17:56:21] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Mango
+[2025-10-01 17:56:21] [INFO] BaseSetup - 🔎 Searching for product: Musk Melon
+[2025-10-01 17:56:21] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Musk Melon
+[2025-10-01 17:56:21] [INFO] BaseSetup - 🔎 Searching for product: Orange
+[2025-10-01 17:56:22] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Orange
+[2025-10-01 17:56:22] [INFO] BaseSetup - 🔎 Searching for product: Pears
+[2025-10-01 17:56:22] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pears
+[2025-10-01 17:56:22] [INFO] BaseSetup - 🔎 Searching for product: Pomegranate
+[2025-10-01 17:56:22] [WARN] BaseSetup - ♻ Retrying after stale element for product: Pomegranate
+[2025-10-01 17:56:23] [INFO] BaseSetup - 🔎 Searching for product: Raspberry
+[2025-10-01 17:56:23] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Raspberry
+[2025-10-01 17:56:23] [INFO] BaseSetup - 🔎 Searching for product: Strawberry
+[2025-10-01 17:56:23] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Strawberry
+[2025-10-01 17:56:23] [INFO] BaseSetup - 🔎 Searching for product: Water Melon
+[2025-10-01 17:56:24] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Water Melon
+[2025-10-01 17:56:24] [INFO] BaseSetup - 🔎 Searching for product: Almonds
+[2025-10-01 17:56:24] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Almonds
+[2025-10-01 17:56:24] [INFO] BaseSetup - 🔎 Searching for product: Pista
+[2025-10-01 17:56:24] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pista
+[2025-10-01 17:56:24] [INFO] BaseSetup - 🔎 Searching for product: Nuts Mixture
+[2025-10-01 17:56:25] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Nuts Mixture
+[2025-10-01 17:56:25] [INFO] BaseSetup - 🔎 Searching for product: Cashews
+[2025-10-01 17:56:25] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Cashews
+[2025-10-01 17:56:25] [INFO] BaseSetup - 🔎 Searching for product: Walnuts
+[2025-10-01 17:56:25] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Walnuts
+[2025-10-01 17:56:25] [INFO] BaseSetup - 🔎 Searching for product: 
+[2025-10-01 17:56:26] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: 
+[2025-10-01 17:56:26] [INFO] BaseSetup - 🔎 Searching for product: 
+[2025-10-01 17:56:26] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: 
+[2025-10-01 17:56:27] [INFO] BaseSetup - 💸 Entering promo code...
+[2025-10-01 17:56:32] [INFO] BaseSetup - 🎁 Promo info displayed: Code applied ..!
+[2025-10-01 17:56:32] [INFO] BaseSetup - 💰 Total calculated from items: 990
+[2025-10-01 17:56:32] [INFO] BaseSetup - 📊 Price rows found: 7
+[2025-10-01 17:56:32] [INFO] BaseSetup - 🛒 Displayed total: 990
+[2025-10-01 17:56:32] [INFO] BaseSetup - ✅ Assertion Passed: Total amount matches displayed total.
+[2025-10-01 18:01:21] [WARN] TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Anmol\eclipse-workspace\SyncWaits\testng.xml] otherwise TestNG may fail or not work as expected.
+[2025-10-01 18:01:21] [INFO] Utils - [TestNG] Running:
+  C:\Users\Anmol\eclipse-workspace\SyncWaits\testng.xml
+
+[2025-10-01 18:01:24] [INFO] BaseSetup - 🚀 Starting test: buttonDisabled
+[2025-10-01 18:01:25] [INFO] BaseSetup - 🔍 Checkout button - Displayed: true, Enabled: true
+[2025-10-01 18:01:25] [ERROR] BaseSetup - ❌ Assertion Failed in buttonDisabled test: ❌ Checkout button should be disabled expected [false] but found [true]
+[2025-10-01 18:01:25] [INFO] BaseSetup - 🚀 Starting test: addToCartItem
+[2025-10-01 18:01:25] [INFO] BaseSetup - 🛒 Items to add: [Cucumber, Brocolli, Beetroot]
+[2025-10-01 18:01:25] [INFO] BaseSetup - ✅ Found item: Brocolli, adding to cart...
+[2025-10-01 18:01:25] [INFO] BaseSetup - ✅ Found item: Cucumber, adding to cart...
+[2025-10-01 18:01:25] [INFO] BaseSetup - ✅ Found item: Beetroot, adding to cart...
+[2025-10-01 18:01:25] [INFO] BaseSetup - 🎯 All desired items added to cart.
+[2025-10-01 18:01:25] [INFO] BaseSetup - 🛒 Opening cart...
+[2025-10-01 18:01:26] [INFO] BaseSetup - 💸 Entering promo code...
+[2025-10-01 18:01:32] [INFO] BaseSetup - 🎁 Promo info displayed: Code applied ..!
+[2025-10-01 18:01:32] [INFO] BaseSetup - ✅ Test addToCartItem completed.
+[2025-10-01 18:01:34] [INFO] BaseSetup - 🚀 Starting test: Search and Add Products to Cart
+[2025-10-01 18:01:35] [INFO] BaseSetup - 🛒 Total products found: 32
+[2025-10-01 18:01:35] [INFO] BaseSetup - 🔎 Searching for product: Brocolli
+[2025-10-01 18:01:35] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Brocolli
+[2025-10-01 18:01:35] [INFO] BaseSetup - 🔎 Searching for product: Cauliflower
+[2025-10-01 18:01:35] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Cauliflower
+[2025-10-01 18:01:35] [INFO] BaseSetup - 🔎 Searching for product: Cucumber
+[2025-10-01 18:01:36] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Cucumber
+[2025-10-01 18:01:36] [INFO] BaseSetup - 🔎 Searching for product: Beetroot
+[2025-10-01 18:01:36] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Beetroot
+[2025-10-01 18:01:36] [INFO] BaseSetup - 🔎 Searching for product: Carrot
+[2025-10-01 18:01:36] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Carrot
+[2025-10-01 18:01:36] [INFO] BaseSetup - 🔎 Searching for product: Tomato
+[2025-10-01 18:01:37] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Tomato
+[2025-10-01 18:01:37] [INFO] BaseSetup - 🔎 Searching for product: Beans
+[2025-10-01 18:01:37] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Beans
+[2025-10-01 18:01:37] [INFO] BaseSetup - 🔎 Searching for product: Brinjal
+[2025-10-01 18:01:37] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Brinjal
+[2025-10-01 18:01:37] [INFO] BaseSetup - 🔎 Searching for product: Capsicum
+[2025-10-01 18:01:38] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Capsicum
+[2025-10-01 18:01:38] [INFO] BaseSetup - 🔎 Searching for product: Mushroom
+[2025-10-01 18:01:38] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Mushroom
+[2025-10-01 18:01:38] [INFO] BaseSetup - 🔎 Searching for product: Potato
+[2025-10-01 18:01:38] [WARN] BaseSetup - ♻ Retrying after stale element for product: Potato
+[2025-10-01 18:01:38] [INFO] BaseSetup - 🔎 Searching for product: Pumpkin
+[2025-10-01 18:01:39] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pumpkin
+[2025-10-01 18:01:39] [INFO] BaseSetup - 🔎 Searching for product: Corn
+[2025-10-01 18:01:39] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Corn
+[2025-10-01 18:01:39] [INFO] BaseSetup - 🔎 Searching for product: Onion
+[2025-10-01 18:01:39] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Onion
+[2025-10-01 18:01:39] [INFO] BaseSetup - 🔎 Searching for product: Apple
+[2025-10-01 18:01:40] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Apple
+[2025-10-01 18:01:40] [INFO] BaseSetup - 🔎 Searching for product: Banana
+[2025-10-01 18:01:40] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Banana
+[2025-10-01 18:01:40] [INFO] BaseSetup - 🔎 Searching for product: Grapes
+[2025-10-01 18:01:41] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Grapes
+[2025-10-01 18:01:41] [INFO] BaseSetup - 🔎 Searching for product: Mango
+[2025-10-01 18:01:41] [WARN] BaseSetup - ♻ Retrying after stale element for product: Mango
+[2025-10-01 18:01:41] [INFO] BaseSetup - 🔎 Searching for product: Musk Melon
+[2025-10-01 18:01:41] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Musk Melon
+[2025-10-01 18:01:41] [INFO] BaseSetup - 🔎 Searching for product: Orange
+[2025-10-01 18:01:42] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Orange
+[2025-10-01 18:01:42] [INFO] BaseSetup - 🔎 Searching for product: Pears
+[2025-10-01 18:01:42] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pears
+[2025-10-01 18:01:42] [INFO] BaseSetup - 🔎 Searching for product: Pomegranate
+[2025-10-01 18:01:42] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pomegranate
+[2025-10-01 18:01:42] [INFO] BaseSetup - 🔎 Searching for product: Raspberry
+[2025-10-01 18:01:43] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Raspberry
+[2025-10-01 18:01:43] [INFO] BaseSetup - 🔎 Searching for product: Strawberry
+[2025-10-01 18:01:43] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Strawberry
+[2025-10-01 18:01:43] [INFO] BaseSetup - 🔎 Searching for product: Water Melon
+[2025-10-01 18:01:43] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Water Melon
+[2025-10-01 18:01:44] [INFO] BaseSetup - 🔎 Searching for product: Almonds
+[2025-10-01 18:01:44] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Almonds
+[2025-10-01 18:01:44] [INFO] BaseSetup - 🔎 Searching for product: Pista
+[2025-10-01 18:01:44] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Pista
+[2025-10-01 18:01:44] [INFO] BaseSetup - 🔎 Searching for product: Nuts Mixture
+[2025-10-01 18:01:45] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Nuts Mixture
+[2025-10-01 18:01:45] [INFO] BaseSetup - 🔎 Searching for product: Cashews
+[2025-10-01 18:01:45] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Cashews
+[2025-10-01 18:01:45] [INFO] BaseSetup - 🔎 Searching for product: Walnuts
+[2025-10-01 18:01:45] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: Walnuts
+[2025-10-01 18:01:45] [INFO] BaseSetup - 🔎 Searching for product: 
+[2025-10-01 18:01:45] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: 
+[2025-10-01 18:01:45] [INFO] BaseSetup - 🔎 Searching for product: 
+[2025-10-01 18:01:46] [INFO] BaseSetup - ✅ Clicked 'ADD TO CART' for: 
+[2025-10-01 18:01:46] [INFO] BaseSetup - 💸 Entering promo code...
+[2025-10-01 18:01:52] [INFO] BaseSetup - 🎁 Promo info displayed: Code applied ..!
+[2025-10-01 18:01:52] [INFO] BaseSetup - 💰 Total calculated from items: 1354
+[2025-10-01 18:01:52] [INFO] BaseSetup - 📊 Price rows found: 6
+[2025-10-01 18:01:52] [INFO] BaseSetup - 🛒 Displayed total: 1354
+[2025-10-01 18:01:52] [INFO] BaseSetup - ✅ Assertion Passed: Total amount matches displayed total.
