@@ -1,0 +1,12 @@
+<suite name="AutomationSuite">
+    <listeners>
+        <listener class-name="Selenium_Introduction.SyncWaits.TestListener"/>
+    </listeners>
+
+    <test name="RegressionTests">
+        <classes>
+            <class name="Selenium_Introduction.SyncWaits.LearningWaits"/>
+            <class name="Selenium_Introduction.SyncWaits.SearchItems"/>
+        </classes>
+    </test>
+</suite>
